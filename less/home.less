@@ -3,19 +3,31 @@ body{
     //I need to trouble shoot how to lighten the image
 }
 .main{
-    padding-top:20%;
+    //padding-top:40%;
     .signup{
         padding:1%;
         .flex_std;
         flex-flow: column nowrap;
         background: transparent;
+        justify-content: space-around;
         //background: cover;
         height: 100vh;
         h2{
             line-height: 4;
+            background:@white;
+            color:@font-color;
+            opacity: .4;
+            display:flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
         }
         .button{
             .button_mix;
+            font-size:3rem;
+            color:@button_std_cl;
+            background: @white;
+            padding:1%;
         }
     }
 }

@@ -2,8 +2,9 @@
 Plan for Completion
 -   [x] Build the skeleton for the page and files
 -   [x] Style elements to match page, with the exception of Stats section, and color scheme.
--   [] Troubleshoot image brightness issue
+-   [x] Troubleshoot image brightness issue
 -   [] Wireframe the About and Stats section
 -   [] Build and style section to match wireframe
--   [ ] Determine final font colors and background colors.
+-  [] Style all page's for desktop and tablet
+-   [x] Determine final font colors and background colors.
 -   [] Touch bases with Nathan and Steve, and adjust page to meet their feedback.

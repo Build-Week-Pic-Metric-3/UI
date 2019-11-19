@@ -2,18 +2,30 @@
     border-bottom:black 1px solid;
     margin:0% 0% 0% 0%;
     padding:1%;
-    background:@white;
+    background:@header_color;
+    color:@white;
     width: 100%;
     .flex_std;
     .locked;
-    
+    opacity: .9;
     nav{
         .flex_std;
     }
     .flex_std;
     max-width: 100%;
     .logo{
+        .flex_std;
+        flex-flow:column;
+        justify-content: center;
         width:15%;
+        h3{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            background: @white;
+            color:black;
+            cursor:pointer;
+        }
     }
     
     .button{

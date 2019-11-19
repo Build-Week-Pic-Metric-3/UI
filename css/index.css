@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background: lightblue;
+  background: #eeeeee;
 }
 h1,
 h2,
@@ -168,10 +168,12 @@ content {
   border-bottom: black 1px solid;
   margin: 0% 0% 0% 0%;
   padding: 1%;
-  background: white;
+  background: #393e46;
+  color: #eeeeee;
   position: fixed;
   top: 0;
   width: 100%;
+  opacity: 0.9;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -185,7 +187,21 @@ content {
   align-items: center;
 }
 .top-bar .logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
   width: 15%;
+}
+.top-bar .logo h3 {
+  font-size: 1.5rem;
+}
+.top-bar .logo:hover {
+  background: #eeeeee;
+  color: black;
+  cursor: pointer;
 }
 .top-bar .button {
   display: block;
@@ -193,25 +209,23 @@ content {
   max-width: 100%;
   width: 80%;
   height: 4rem;
-  background-color: blue;
-  color: white;
+  background-color: #00adb5;
+  color: #eeeeee;
   font-size: 1.75rem;
   padding: 5%;
   border-radius: 15px;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
   width: 20%;
   padding: 2%;
 }
 .top-bar .button:hover {
-  color: red;
-  background: white;
+  color: #00adb5;
+  background: #eeeeee;
 }
 body {
-  background: url(../img/backpackcam.jpg) white;
-}
-.main {
-  padding-top: 20%;
+  background: url(../img/backpackcam.jpg) #eeeeee;
 }
 .main .signup {
   padding: 1%;
@@ -221,10 +235,18 @@ body {
   align-items: center;
   flex-flow: column nowrap;
   background: transparent;
+  justify-content: space-around;
   height: 100vh;
 }
 .main .signup h2 {
   line-height: 4;
+  background: #eeeeee;
+  color: #222831;
+  opacity: 0.4;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .main .signup .button {
   display: block;
@@ -232,15 +254,20 @@ body {
   max-width: 100%;
   width: 80%;
   height: 4rem;
-  background-color: blue;
-  color: white;
+  background-color: #00adb5;
+  color: #eeeeee;
   font-size: 1.75rem;
   padding: 5%;
   border-radius: 15px;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
+  font-size: 3rem;
+  color: #00adb5;
+  background: #eeeeee;
+  padding: 1%;
 }
 .main .signup .button:hover {
-  color: red;
-  background: white;
+  color: #00adb5;
+  background: #eeeeee;
 }
