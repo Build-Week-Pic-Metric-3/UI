@@ -1,11 +1,18 @@
 .about{
    margin-top:20%;
+   @media @desktop{
+       margin-top:6%;
+   }
 }
 .about{
     .flex_std;
     flex-flow: column;
+    
     h2{
         border-bottom: 2px solid @black;
+        @media @desktop{
+            margin-bottom:4%;
+        }
     }
     .team{
         .flex_std;
@@ -17,6 +24,9 @@
             .flex_std;
             width: 80%;
             text-align: center;
+            @media @desktop{
+                width: 19%;
+            }
             // h3{
             //     background: @black;
             //     color:white;
@@ -31,6 +41,9 @@
         }
         .reverse{
             flex-direction: row-reverse;
+            @media @desktop{
+                flex-direction: row;
+            }
         }
     }
 }

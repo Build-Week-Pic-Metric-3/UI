@@ -173,14 +173,14 @@ content {
   padding: 1%;
   background: #393e46;
   color: #eeeeee;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0.9;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
   max-width: 100%;
 }
 .top-bar nav {
@@ -188,6 +188,12 @@ content {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1000px) {
+  .top-bar nav a h1 {
+    font-size: 3rem;
+    color: #eeeeee;
+  }
 }
 .top-bar nav a:link {
   text-decoration: none;
@@ -205,10 +211,19 @@ content {
   flex-flow: column;
   justify-content: center;
   width: 15%;
-  border: #eeeeee 1px #222831;
+}
+@media (min-width: 1000px) {
+  .top-bar .logo {
+    width: 6%;
+    flex-flow: row;
+    padding: 0% 2% 0% 1%;
+    color: #eeeeee;
+  }
 }
 .top-bar .logo h3 {
   font-size: 1.5rem;
+}
+@media (min-width: 1000px) {
 }
 .top-bar .logo:hover {
   background: #eeeeee;
@@ -237,8 +252,29 @@ content {
   color: #00adb5;
   background: #eeeeee;
 }
+@media (min-width: 1000px) {
+  .top-bar .button {
+    width: 7%;
+    padding: 0.6%;
+  }
+}
+@media (min-width: 1000px) {
+  .main_marketing {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .main {
   background: url(../img/backpackcam.jpg) #eeeeee;
+  max-width: 500px;
+}
+@media (min-width: 1000px) {
+  .main {
+    flex-grow: 2;
+  }
 }
 .main .signup {
   padding: 1%;
@@ -289,6 +325,13 @@ content {
   color: black;
   opacity: 0.6;
 }
+@media (min-width: 1000px) {
+  .main .signup .button {
+    background: #00adb5;
+    color: #eeeeee;
+    opacity: 0.7;
+  }
+}
 .marketing {
   display: flex;
   flex-flow: row nowrap;
@@ -296,27 +339,61 @@ content {
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5%;
+}
+@media (min-width: 1000px) {
+  .marketing {
+    width: 50%;
+    height: 100vh;
+    padding-top: 6%;
+    align-content: stretch;
+  }
 }
 .marketing .fact {
-  margin: 3%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   width: 80%;
   text-align: center;
   padding-bottom: 3%;
   border-bottom: 1px solid black;
 }
+@media (min-width: 1000px) {
+  .marketing .fact {
+    flex-direction: row;
+  }
+  .marketing .fact .desk_style {
+    width: 100%;
+  }
+}
+.marketing .fact h2 {
+  margin: 6%;
+}
 .marketing .fact img {
   border-radius: 9%;
-  width: 50%;
+  width: 60%;
+  margin: 3%;
 }
-.marketing .reverse {
-  flex-direction: row-reverse;
+@media (min-width: 1000px) {
+  .marketing .fact img {
+    width: 90%;
+    margin: 3%;
+  }
+}
+@media (min-width: 1000px) {
+  .marketing .reverse {
+    flex-direction: row-reverse;
+  }
 }
 .about {
   margin-top: 20%;
+}
+@media (min-width: 1000px) {
+  .about {
+    margin-top: 6%;
+  }
 }
 .about {
   display: flex;
@@ -327,6 +404,11 @@ content {
 }
 .about h2 {
   border-bottom: 2px solid black;
+}
+@media (min-width: 1000px) {
+  .about h2 {
+    margin-bottom: 4%;
+  }
 }
 .about .team {
   display: flex;
@@ -347,10 +429,20 @@ content {
   padding-bottom: 3%;
   border-bottom: 1px solid black;
 }
+@media (min-width: 1000px) {
+  .about .team .person {
+    width: 19%;
+  }
+}
 .about .team .person img {
   border-radius: 50%;
   width: 50%;
 }
 .about .team .reverse {
   flex-direction: row-reverse;
+}
+@media (min-width: 1000px) {
+  .about .team .reverse {
+    flex-direction: row;
+  }
 }

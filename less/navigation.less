@@ -8,9 +8,17 @@
     .flex_std;
     .locked;
     opacity: .9;
+    max-width: 100%;
     nav{
         .flex_std;
         a{
+            
+            h1{
+                @media @desktop{
+                    font-size:3rem;
+                    color:@white;
+                }
+            }
             &:link{
                 text-decoration: none;
                 color:@white;
@@ -20,19 +28,25 @@
                 color:@black;
             }
         }
-    }
-    .flex_std;
-    max-width: 100%;
-    
+    }   
     .logo{
         .flex_std;
         flex-flow:column;
         justify-content: center;
         width:15%;
-        border:@white 1px @font-color;
+        @media @desktop{
+            width:6%;
+            flex-flow:row;
+            padding:0% 2% 0% 1%;
+            color:@white;
+        }
         
         h3{
             font-size: 1.5rem;
+            @media @desktop{
+            
+                //flex-flow:row;
+            }
         }
         &:hover{
             background: @white;
@@ -46,5 +60,9 @@
         .button_mix;
         width: 20%;
         padding:2%;
+        @media @desktop{
+            width: 7%;
+            padding:.6%;
         }
+    }
 }

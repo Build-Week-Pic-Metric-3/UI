@@ -5,6 +5,7 @@ Plan for Completion
 -   [x] Troubleshoot image brightness issue
 -   [x] Wireframe the About and Stats section
 -   [x] Build and style section to match wireframe
--  [] Style all page's for desktop and tablet
+-  [x] Style all page's for desktop 
+-  [] Style all page's for tablet 
 -   [x] Determine final font colors and background colors.
 -   [] Touch bases with Nathan and Steve, and adjust page to meet their feedback.
