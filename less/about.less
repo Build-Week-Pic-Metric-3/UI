@@ -1,14 +1,36 @@
 .about{
    margin-top:20%;
 }
-.team{
+.about{
     .flex_std;
-    flex-flow: wrap;
-    .person{
-        width: 30%;
-        img{
-            border-radius: 50%;
+    flex-flow: column;
+    h2{
+        border-bottom: 2px solid @black;
+    }
+    .team{
+        .flex_std;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        .person{
+            margin:3%;
+            .flex_std;
+            width: 80%;
+            text-align: center;
+            // h3{
+            //     background: @black;
+            //     color:white;
+            //     opacity: .3;
+            // }
+            img{
+                border-radius: 50%;
+                width:50%;
+            }
+            padding-bottom:3%;
+            border-bottom: 1px solid @black;
         }
-        
+        .reverse{
+            flex-direction: row-reverse;
+        }
     }
 }

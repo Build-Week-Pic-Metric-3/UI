@@ -237,7 +237,7 @@ content {
   color: #00adb5;
   background: #eeeeee;
 }
-body {
+.main {
   background: url(../img/backpackcam.jpg) #eeeeee;
 }
 .main .signup {
@@ -289,19 +289,68 @@ body {
   color: black;
   opacity: 0.6;
 }
-.about {
-  margin-top: 20%;
+.marketing {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.team {
+.marketing .fact {
+  margin: 3%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
+}
+.marketing .fact img {
+  border-radius: 9%;
+  width: 50%;
+}
+.marketing .reverse {
+  flex-direction: row-reverse;
+}
+.about {
+  margin-top: 20%;
+}
+.about {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+}
+.about h2 {
+  border-bottom: 2px solid black;
+}
+.about .team {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.team .person {
-  width: 30%;
+.about .team .person {
+  margin: 3%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 3%;
+  border-bottom: 1px solid black;
 }
-.team .person img {
+.about .team .person img {
   border-radius: 50%;
+  width: 50%;
+}
+.about .team .reverse {
+  flex-direction: row-reverse;
 }

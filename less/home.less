@@ -1,9 +1,11 @@
 body{
-    background: url(../img/backpackcam.jpg) @white;
+     
+    
     //I need to trouble shoot how to lighten the image
 }
 .main{
     //padding-top:40%;
+    background: url(../img/backpackcam.jpg) @white;
     .signup{
         padding:1%;
         .flex_std;
@@ -34,5 +36,31 @@ body{
                 opacity: .6;
             }
         }
+    }
+}
+.marketing{
+    .flex_std;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    .fact{
+        margin:3%;
+        .flex_std;
+        width: 80%;
+        text-align: center;
+            // h3{
+            //     background: @black;
+            //     color:white;
+            //     opacity: .3;
+            // }
+            img{
+                border-radius: 9%;
+                width:50%;
+            }
+            padding-bottom:3%;
+            border-bottom: 1px solid @black;
+    }
+    .reverse{
+        flex-direction: row-reverse;
     }
 }
