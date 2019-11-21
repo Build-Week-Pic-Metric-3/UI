@@ -1,6 +1,11 @@
 .link_std:link {
   text-decoration: none;
-  color: #eeeeee;
+  color: black;
+}
+@media (min-width: 800px) {
+  .link_std:link {
+    color: #eeeeee;
+  }
 }
 .link_std:visited {
   text-decoration: none;
@@ -489,7 +494,12 @@ content {
 }
 .about .team .person:link {
   text-decoration: none;
-  color: #eeeeee;
+  color: black;
+}
+@media (min-width: 800px) {
+  .about .team .person:link {
+    color: #eeeeee;
+  }
 }
 .about .team .person:visited {
   text-decoration: none;
@@ -511,7 +521,7 @@ content {
   }
   .about .team .person:link {
     text-decoration: none;
-    color: #eeeeee;
+    color: black;
   }
   .about .team .person:visited {
     text-decoration: none;
@@ -520,6 +530,11 @@ content {
   .about .team .person:hover {
     opacity: 1;
     cursor: pointer;
+  }
+}
+@media (min-width: 800px) and (min-width: 800px) {
+  .about .team .person:link {
+    color: #eeeeee;
   }
 }
 @media (min-width: 1000px) {
