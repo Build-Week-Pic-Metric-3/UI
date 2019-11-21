@@ -1,3 +1,11 @@
+.link_std:link {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.link_std:visited {
+  text-decoration: none;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -247,6 +255,8 @@ content {
   cursor: pointer;
   width: 20%;
   padding: 2%;
+  display: flex;
+  justify-content: center;
 }
 .top-bar .button:hover {
   color: #00adb5;
@@ -254,9 +264,11 @@ content {
 }
 @media (min-width: 1000px) {
   .top-bar .button {
-    width: 7%;
-    padding: 0.6%;
+    width: 7.5%;
+    padding: 0.9%;
   }
+}
+@media (min-width: 1000px) {
 }
 @media (min-width: 1000px) {
   .main_marketing {
@@ -395,6 +407,8 @@ content {
     margin-top: 6%;
   }
 }
+@media (min-width: 1000px) {
+}
 .about {
   display: flex;
   flex-flow: row nowrap;
@@ -407,7 +421,7 @@ content {
 }
 @media (min-width: 1000px) {
   .about h2 {
-    margin-bottom: 4%;
+    margin-top: 2%;
   }
 }
 .about .team {
@@ -418,6 +432,11 @@ content {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1000px) {
+  .about .team {
+    align-items: stretch;
+  }
+}
 .about .team .person {
   margin: 3%;
   display: flex;
@@ -426,12 +445,43 @@ content {
   align-items: center;
   width: 80%;
   text-align: center;
-  padding-bottom: 3%;
   border-bottom: 1px solid black;
+  padding-bottom: 3%;
+  color: black;
+}
+.about .team .person:link {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.about .team .person:visited {
+  text-decoration: none;
+  color: black;
+}
+.about .team .person:hover {
+  opacity: 0.85;
+  cursor: pointer;
 }
 @media (min-width: 1000px) {
   .about .team .person {
     width: 19%;
+    padding: 3% 1% 3% 1%;
+    border: 1px solid #393e46;
+    background-color: #393e46;
+    color: #eeeeee;
+    opacity: 0.85;
+    border-radius: 10%;
+  }
+  .about .team .person:link {
+    text-decoration: none;
+    color: #eeeeee;
+  }
+  .about .team .person:visited {
+    text-decoration: none;
+    color: black;
+  }
+  .about .team .person:hover {
+    opacity: 1;
+    cursor: pointer;
   }
 }
 .about .team .person img {
