@@ -37,7 +37,10 @@
 .link_std{
     &:link{
         text-decoration: none;
-        color:@white;
+        color:@black;
+        @media @tablet{
+         color:@white;
+        }
     }
     &:visited{
         text-decoration: none;
