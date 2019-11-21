@@ -407,12 +407,14 @@ content {
 }
 @media (min-width: 1000px) {
   .marketing .fact {
-    border-top: 1px solid black;
     width: 80%;
     flex-direction: row;
   }
   .marketing .fact .desk_style {
     width: 100%;
+  }
+  .marketing .fact p {
+    margin: 3%;
   }
 }
 .marketing .fact h2 {
