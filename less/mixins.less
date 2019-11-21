@@ -1,0 +1,55 @@
+
+//mixins sorted alphabetically
+.button_mix(){
+    display:block;
+    margin:0% 1% 1% 2%;
+    max-width: 100%;
+    width:80%;
+    height:4rem;
+    background-color: @button_std_cl;
+    color:@white;
+    font-size: 1.75rem;
+    padding:5%;
+    border-radius:15px;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+    &:hover{
+        color:@button_click_cl;
+        background:@white;
+    }
+}
+
+.centered(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_std(){
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.link_std{
+    &:link{
+        text-decoration: none;
+        color:@white;
+    }
+    &:visited{
+        text-decoration: none;
+        color:@black;
+    }
+}
+.locked() {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .test(){
+      border: black 1px solid;
+  }

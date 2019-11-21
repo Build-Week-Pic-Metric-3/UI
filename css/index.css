@@ -1,0 +1,522 @@
+.link_std:link {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.link_std:visited {
+  text-decoration: none;
+  color: black;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #eeeeee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Alatsi', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+content {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-bar {
+  border-bottom: black 1px solid;
+  margin: 0% 0% 0% 0%;
+  padding: 1%;
+  background: #393e46;
+  color: #eeeeee;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  max-width: 100%;
+}
+.top-bar nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar nav a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap;
+}
+@media (max-width: 330px) {
+  .top-bar nav a h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .top-bar nav a h1 {
+    font-size: 3rem;
+    color: #eeeeee;
+  }
+}
+.top-bar nav a:link {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.top-bar nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+.top-bar .logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+@media (min-width: 1000px) {
+  .top-bar .logo {
+    width: 6%;
+    flex-flow: row;
+    padding: 0% 2% 0% 1%;
+    color: #eeeeee;
+  }
+}
+.top-bar .logo h3 {
+  font-size: 1.5rem;
+}
+.top-bar .logo:hover {
+  background: #eeeeee;
+  opacity: 0.6;
+  color: black;
+  cursor: pointer;
+}
+.top-bar .button {
+  display: block;
+  margin: 0% 1% 1% 2%;
+  max-width: 100%;
+  width: 80%;
+  height: 4rem;
+  background-color: #00adb5;
+  color: #eeeeee;
+  font-size: 1.75rem;
+  padding: 5%;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 20%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+.top-bar .button:hover {
+  color: #00adb5;
+  background: #eeeeee;
+}
+@media (min-width: 1000px) {
+  .top-bar .button {
+    width: 7.5%;
+    padding: 0.9%;
+  }
+}
+@media (min-width: 800px) {
+  .main_marketing {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1000px) {
+  .main_marketing {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.main {
+  background: url(../img/backpackcam.jpg) #eeeeee;
+  max-width: 500px;
+  max-height: 750px;
+}
+@media (min-width: 800px) {
+  .main {
+    width: 100%;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1000px) {
+  .main {
+    flex-grow: 2;
+  }
+}
+.main .signup {
+  padding: 1%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+  background: transparent;
+  justify-content: space-around;
+  max-height: 750px;
+  height: 100vh;
+}
+.main .signup h2 {
+  line-height: 4;
+  background: #eeeeee;
+  color: #222831;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.main .signup .button {
+  display: block;
+  margin: 0% 1% 1% 2%;
+  max-width: 100%;
+  width: 80%;
+  height: 4rem;
+  background-color: #00adb5;
+  color: #eeeeee;
+  font-size: 1.75rem;
+  padding: 5%;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #00adb5;
+  background: #eeeeee;
+  padding: 1%;
+  opacity: 0.8;
+}
+.main .signup .button:hover {
+  color: #00adb5;
+  background: #eeeeee;
+}
+.main .signup .button:hover {
+  color: black;
+  opacity: 0.6;
+}
+@media (min-width: 1000px) {
+  .main .signup .button {
+    background: #00adb5;
+    color: #eeeeee;
+    opacity: 0.7;
+  }
+}
+.marketing {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+@media (min-width: 1000px) {
+  .marketing {
+    height: 100vh;
+    padding-top: 6%;
+    width: 50%;
+  }
+}
+.marketing .fact {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3%;
+  text-align: center;
+  width: 80%;
+}
+@media (min-width: 1000px) {
+  .marketing .fact {
+    flex-direction: row;
+  }
+  .marketing .fact .desk_style {
+    width: 100%;
+  }
+}
+.marketing .fact h2 {
+  margin: 6%;
+}
+.marketing .fact img {
+  border-radius: 9%;
+  margin: 3%;
+  width: 60%;
+}
+@media (min-width: 1000px) {
+  .marketing .fact img {
+    width: 90%;
+    margin: 3%;
+  }
+}
+@media (min-width: 1000px) {
+  .marketing .reverse {
+    flex-direction: row-reverse;
+  }
+}
+.about {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 20%;
+}
+@media (min-width: 1000px) {
+  .about {
+    margin-top: 6%;
+  }
+}
+.about h2 {
+  border-bottom: 2px solid black;
+}
+@media (min-width: 1000px) {
+  .about h2 {
+    margin-top: 2%;
+  }
+}
+.about .team {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .about .team {
+    align-items: stretch;
+  }
+}
+.about .team .person {
+  margin: 3%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 3%;
+  color: black;
+}
+.about .team .person:link {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.about .team .person:visited {
+  text-decoration: none;
+  color: black;
+}
+.about .team .person:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .about .team .person {
+    width: 19%;
+    padding: 3% 1% 3% 1%;
+    border: 1px solid #393e46;
+    background-color: #393e46;
+    color: #eeeeee;
+    opacity: 0.85;
+    border-radius: 10%;
+  }
+  .about .team .person:link {
+    text-decoration: none;
+    color: #eeeeee;
+  }
+  .about .team .person:visited {
+    text-decoration: none;
+    color: black;
+  }
+  .about .team .person:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+.about .team .person img {
+  border-radius: 50%;
+  width: 50%;
+}
+.about .team .reverse {
+  flex-direction: row-reverse;
+}
+@media (min-width: 1000px) {
+  .about .team .reverse {
+    flex-direction: row;
+  }
+}

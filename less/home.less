@@ -1,0 +1,109 @@
+//Home page styleing
+
+//both section styling
+.main_marketing{
+    @media @tablet{
+        .flex_std;
+        flex-flow: column nowrap;
+        .centered;
+    }
+    @media @desktop{
+        .flex_std;
+        justify-content: center;
+    }
+}
+//main section
+.main{
+    background: url(../img/backpackcam.jpg) @white;
+    max-width: 500px;
+    max-height: 750px;
+    @media @tablet{
+        width: 100%;
+        flex-flow: column nowrap;
+        .centered;
+    }
+    @media @desktop{
+        flex-grow:2;
+    }
+    .signup{
+        padding:1%;
+        .flex_std;
+        flex-flow: column nowrap;
+        background: transparent;
+        justify-content: space-around;
+        max-height: 750px;
+        height: 100vh;
+        
+        h2{
+            line-height: 4;
+            background:@white;
+            color:@font-color;
+            opacity: .5;
+            .centered;
+            flex-flow: column nowrap;
+        }
+
+        .button{
+            .button_mix;
+            font-size:3rem;
+            color:@button_std_cl;
+            background: @white;
+            padding:1%;
+            opacity: .8;
+            &:hover{
+                color:black;
+                opacity: .6;
+            }
+            @media @desktop{
+                background:@blue;
+                color:@white;
+                opacity: .7;
+            }
+        }
+    }
+}
+//section for info
+.marketing{
+    .flex_std;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    @media @desktop{
+        height:100vh;
+        padding-top: 6%;
+        width:50%;        
+    }
+    .fact{
+        border-bottom: 1px solid @black;
+        .flex_std;
+        flex-direction: column;
+        padding-bottom:3%;
+        text-align: center;
+        width: 80%;
+        @media @desktop{
+            flex-direction: row;
+            .desk_style{
+                width:100%;
+            }
+        }
+        
+        h2{
+            margin: 6%;
+        }
+        img{
+            border-radius: 9%;
+            margin:3%;
+            width:60%;
+            @media @desktop{
+                width:90%;
+                margin:3%;
+            }
+         }
+    }
+    @media @desktop{
+        .reverse{
+                flex-direction: row-reverse;
+             }
+    }
+}
