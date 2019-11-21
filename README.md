@@ -6,7 +6,7 @@ Plan for Completion
 -   [x] Wireframe the About and Stats section
 -   [x] Build and style section to match wireframe
 -  [x] Style all page's for desktop 
--  [] Style all page's for tablet 
+-  [x] Style all page's for tablet 
 -   [x] Determine final font colors and background colors.
 -   [x] Touch bases with Nathan and Steve, and adjust page to meet their feedback.
 -[] Host the site
