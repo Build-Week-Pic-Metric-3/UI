@@ -232,7 +232,7 @@ content {
   align-items: center;
   width: 15%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .top-bar .logo {
     width: 6%;
     flex-flow: row;
@@ -400,8 +400,15 @@ content {
   text-align: center;
   width: 80%;
 }
+@media (min-width: 800px) {
+  .marketing .fact {
+    width: 60%;
+  }
+}
 @media (min-width: 1000px) {
   .marketing .fact {
+    border-top: 1px solid black;
+    width: 80%;
     flex-direction: row;
   }
   .marketing .fact .desk_style {
@@ -434,6 +441,11 @@ content {
   align-items: center;
   flex-flow: column;
   margin-top: 20%;
+}
+@media (min-width: 800px) {
+  .about {
+    margin-top: 9%;
+  }
 }
 @media (min-width: 1000px) {
   .about {
@@ -485,9 +497,9 @@ content {
   opacity: 0.85;
   cursor: pointer;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .about .team .person {
-    width: 19%;
+    width: 40%;
     padding: 3% 1% 3% 1%;
     border: 1px solid #393e46;
     background-color: #393e46;
@@ -506,6 +518,11 @@ content {
   .about .team .person:hover {
     opacity: 1;
     cursor: pointer;
+  }
+}
+@media (min-width: 1000px) {
+  .about .team .person {
+    width: 19%;
   }
 }
 .about .team .person img {

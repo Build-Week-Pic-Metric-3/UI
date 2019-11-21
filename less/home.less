@@ -72,7 +72,7 @@
     @media @desktop{
         height:100vh;
         padding-top: 6%;
-        width:50%;        
+        width:50%;       
     }
     .fact{
         border-bottom: 1px solid @black;
@@ -81,11 +81,19 @@
         padding-bottom:3%;
         text-align: center;
         width: 80%;
+        @media @tablet{
+            width: 60%;
+        }
         @media @desktop{
+            border-top:1px solid @black;
+            width: 80%;
             flex-direction: row;
+            //align-items: stretch;
+            //padding:9%, 0%, 9%, 0%;
             .desk_style{
                 width:100%;
             }
+
         }
         
         h2{
