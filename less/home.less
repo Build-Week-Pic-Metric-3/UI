@@ -1,24 +1,29 @@
-body{
-    @media @desktop{
-        //background-image: url(../img/whiteclouds.jpg);
-    }
-    
-    //I need to trouble shoot how to lighten the image
-}
+//Home page styleing
+
+//both section styling
 .main_marketing{
+    @media @tablet{
+        .flex_std;
+        flex-flow: column nowrap;
+        .centered;
+    }
     @media @desktop{
         .flex_std;
         justify-content: center;
     }
 }
+//main section
 .main{
-    //padding-top:40%;
     background: url(../img/backpackcam.jpg) @white;
     max-width: 500px;
+    max-height: 750px;
+    @media @tablet{
+        width: 100%;
+        flex-flow: column nowrap;
+        .centered;
+    }
     @media @desktop{
-        //width:50%
         flex-grow:2;
-        //border:1px dashed @blue;
     }
     .signup{
         padding:1%;
@@ -26,7 +31,7 @@ body{
         flex-flow: column nowrap;
         background: transparent;
         justify-content: space-around;
-        //background: cover;
+        max-height: 750px;
         height: 100vh;
         
         h2{
@@ -34,11 +39,10 @@ body{
             background:@white;
             color:@font-color;
             opacity: .5;
-            display:flex;
+            .centered;
             flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
         }
+
         .button{
             .button_mix;
             font-size:3rem;
@@ -58,6 +62,7 @@ body{
         }
     }
 }
+//section for info
 .marketing{
     .flex_std;
     flex-flow: wrap;
@@ -65,24 +70,21 @@ body{
     align-items: center;
     padding-bottom: 5%;
     @media @desktop{
-        width:50%;
         height:100vh;
         padding-top: 6%;
-        align-content: stretch;
+        width:50%;        
     }
     .fact{
-        //margin:3%;
+        border-bottom: 1px solid @black;
         .flex_std;
         flex-direction: column;
-        width: 80%;
-        text-align: center;
         padding-bottom:3%;
-        border-bottom: 1px solid @black;
+        text-align: center;
+        width: 80%;
         @media @desktop{
             flex-direction: row;
             .desk_style{
                 width:100%;
-                //padding:2%;
             }
         }
         
@@ -91,8 +93,8 @@ body{
         }
         img{
             border-radius: 9%;
-            width:60%;
             margin:3%;
+            width:60%;
             @media @desktop{
                 width:90%;
                 margin:3%;

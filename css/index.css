@@ -197,6 +197,18 @@ content {
   justify-content: space-between;
   align-items: center;
 }
+.top-bar nav a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap;
+}
+@media (max-width: 330px) {
+  .top-bar nav a h1 {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 1000px) {
   .top-bar nav a h1 {
     font-size: 3rem;
@@ -215,9 +227,9 @@ content {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
   width: 15%;
 }
 @media (min-width: 1000px) {
@@ -230,8 +242,6 @@ content {
 }
 .top-bar .logo h3 {
   font-size: 1.5rem;
-}
-@media (min-width: 1000px) {
 }
 .top-bar .logo:hover {
   background: #eeeeee;
@@ -268,7 +278,15 @@ content {
     padding: 0.9%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
+  .main_marketing {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 1000px) {
   .main_marketing {
@@ -282,6 +300,16 @@ content {
 .main {
   background: url(../img/backpackcam.jpg) #eeeeee;
   max-width: 500px;
+  max-height: 750px;
+}
+@media (min-width: 800px) {
+  .main {
+    width: 100%;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 1000px) {
   .main {
@@ -297,6 +325,7 @@ content {
   flex-flow: column nowrap;
   background: transparent;
   justify-content: space-around;
+  max-height: 750px;
   height: 100vh;
 }
 .main .signup h2 {
@@ -305,9 +334,9 @@ content {
   color: #222831;
   opacity: 0.5;
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
 }
 .main .signup .button {
   display: block;
@@ -355,22 +384,21 @@ content {
 }
 @media (min-width: 1000px) {
   .marketing {
-    width: 50%;
     height: 100vh;
     padding-top: 6%;
-    align-content: stretch;
+    width: 50%;
   }
 }
 .marketing .fact {
+  border-bottom: 1px solid black;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 80%;
-  text-align: center;
   padding-bottom: 3%;
-  border-bottom: 1px solid black;
+  text-align: center;
+  width: 80%;
 }
 @media (min-width: 1000px) {
   .marketing .fact {
@@ -385,8 +413,8 @@ content {
 }
 .marketing .fact img {
   border-radius: 9%;
-  width: 60%;
   margin: 3%;
+  width: 60%;
 }
 @media (min-width: 1000px) {
   .marketing .fact img {
@@ -400,21 +428,17 @@ content {
   }
 }
 .about {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
   margin-top: 20%;
 }
 @media (min-width: 1000px) {
   .about {
     margin-top: 6%;
   }
-}
-@media (min-width: 1000px) {
-}
-.about {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
 }
 .about h2 {
   border-bottom: 2px solid black;

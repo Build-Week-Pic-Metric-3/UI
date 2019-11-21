@@ -9,23 +9,28 @@
     .locked;
     opacity: .9;
     max-width: 100%;
-    nav{
+        nav{
         .flex_std;
-        a{
-            
-            h1{
-                @media @desktop{
-                    font-size:3rem;
+            a{
+                .flex_std;
+                flex-flow: nowrap;
+                
+                h1{
+                    @media (max-width: 330px){
+                        font-size:3rem;
+                    };
+                    @media @desktop{
+                        font-size:3rem;
+                        color:@white;
+                    }
+                }
+                &:link{
+                    text-decoration: none;
                     color:@white;
                 }
-            }
-            &:link{
-                text-decoration: none;
-                color:@white;
-            }
-            &:visited{
-                text-decoration: none;
-                color:@black;
+                &:visited{
+                    text-decoration: none;
+                    color:@black;
             }
         }
     }   
@@ -33,6 +38,7 @@
         .flex_std;
         flex-flow:column;
         justify-content: center;
+        align-items: center;
         width:15%;
         @media @desktop{
             width:6%;
@@ -43,10 +49,6 @@
         
         h3{
             font-size: 1.5rem;
-            @media @desktop{
-            
-                //flex-flow:row;
-            }
         }
         &:hover{
             background: @white;

@@ -1,11 +1,5 @@
-.flex_std(){
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    
-}
 
+//mixins sorted alphabetically
 .button_mix(){
     display:block;
     margin:0% 1% 1% 2%;
@@ -26,6 +20,20 @@
     }
 }
 
+.centered(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_std(){
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
 .link_std{
     &:link{
         text-decoration: none;
@@ -40,4 +48,8 @@
     position: fixed;
     top: 0;
     width: 100%;
+  }
+
+  .test(){
+      border: black 1px solid;
   }
